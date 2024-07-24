@@ -6,9 +6,17 @@
   margin: 0;
   padding: 0;
 }
+.main {
+  background: rgb(17, 17, 17);
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
 /* shared styles  start*/
 .flex {
   display: flex;
+}
+.grid {
+  display: grid;
 }
 .max-width {
   max-width: 1440px;
@@ -30,6 +38,27 @@
 .mt-96 {
   margin-top: 6.125rem;
 }
+.mt-14 {
+  margin-top: 0.875rem;
+}
+.text-center {
+  text-align: center;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.font-18 {
+  font-size: 1.125rem;
+}
+.font-600 {
+  font-weight: 600;
+}
+.text-none {
+  text-decoration: none;
+}
+.list-none {
+  list-style: none;
+}
 /* shared styles  end*/
 
 /* individual styles start  */
@@ -37,7 +66,7 @@
   background: linear-gradient(
     0deg,
     rgb(17, 17, 17),
-    rgba(119, 119, 119, 0.5) 100%
+    rgba(34, 34, 34, 0.6) 100%
   );
   padding-top: 2rem;
 }
@@ -58,14 +87,14 @@
   padding: 0.313rem;
 }
 .nav-item {
-  list-style: none;
+  /* list-style: none; */
   padding: 0.5rem 1.25rem;
   border-radius: 2.875rem;
-  font-weight: 600;
-  font-size: 1.125rem;
+  /* font-weight: 600; */
+  /* font-size: 1.125rem; */
 }
 .nav-item a {
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 .title-text-container {
   width: 600px;
@@ -77,10 +106,10 @@
 .title span {
   font-family: "Dancing Script", cursive;
 }
-.title-text-container .text-info,
+/* .title-text-container .text-info,
 .banner-btn-container {
   margin-top: 0.875rem;
-}
+} */
 .banner-btn-container {
   column-gap: 0.875rem;
 }
@@ -98,3 +127,414 @@
 .img-container img {
   width: 100%;
 }
+.rectangle-01,
+.rectangle-02 {
+  padding: 1.5rem;
+  background: rgba(48, 48, 48, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 0.75rem;
+}
+.rectangle-01 {
+  column-gap: 0.5rem;
+  align-items: center;
+  position: absolute;
+  /* top: 556px;
+  left: 1180px; */
+  top: 62%;
+  left: 62%;
+}
+.rectangle-02 {
+  position: absolute;
+  /* top: 300px;
+  left: 1550px; */
+  top: 33%;
+  left: 80%;
+}
+.circle {
+  background-color: rgb(230, 83, 60);
+  padding: 2.5rem;
+  border-radius: 50%;
+}
+.rec-01-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.rec-02-title {
+  font-size: 2.25rem;
+}
+
+/* habit section  */
+.habit-title,
+.run-title,
+.team-title,
+.bmi-title,
+.feature-title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+/* .habit-info {
+  margin-top: 0.875rem;
+} */
+.habit-card-container {
+  /* display: grid; */
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3.375rem;
+  column-gap: 1.563rem;
+}
+.habit-img-container {
+  width: 272px;
+}
+.habit-img {
+  border-radius: 50%;
+  width: 100%;
+}
+.habit-img-title {
+  /* font-size: 1.125rem; */
+  /* font-weight: 600; */
+  margin-top: 1.875rem;
+}
+.habit-card {
+  flex-direction: column;
+  align-items: center;
+}
+.habit-card p {
+  /* text-align: center; */
+  margin-top: 0.375rem;
+}
+/* bmi calculator  */
+.bmi-card-container {
+  margin-top: 5.5rem;
+  background: rgb(34, 34, 34);
+}
+.bmi-card {
+  padding: 3.125rem 0;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
+/* .bmi-calculator,
+.bmi-chart {
+  width: 50%;
+} */
+.table {
+  border-collapse: collapse;
+  margin-top: 3.125rem;
+}
+.table-head {
+  font-size: 1rem;
+  text-align: start;
+}
+.table-head,
+.table-data {
+  border: 0.063rem solid rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+}
+.bmi-sub-title {
+  font-size: 1.75rem;
+}
+.inp-container {
+  margin-top: 2rem;
+  /* display: grid; */
+  grid-template-columns: repeat(2, 1fr);
+}
+.bmi-input {
+  padding: 0.75rem 2.5rem 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  background: rgb(44, 44, 44);
+  margin: 0.313rem;
+  border: none;
+  color: white;
+}
+
+.bmi-select-input {
+  grid-column: span 2;
+}
+/* run card container  */
+.run-card-container {
+  border-radius: 1.125rem;
+  background: rgb(34, 34, 34);
+}
+.run-card {
+  padding: 2.5rem 2rem 2.5rem 3.375rem;
+  column-gap: 10rem;
+  justify-content: space-between;
+}
+/* .run-card .text-info,
+.bmi-calculator .text-info {
+  margin-top: 0.875rem;
+} */
+.run-btn,
+.bmi-btn {
+  margin-top: 2.215rem;
+  /* list-style: none; */
+  /* font-size: 1.125rem; */
+  /* font-weight: 600; */
+}
+.run-btn a,
+.bmi-btn a {
+  padding: 1rem 2.5rem;
+  /* text-decoration: none; */
+  border-radius: 2.325rem;
+}
+
+.run-img {
+  width: 100%;
+  border-radius: 1.125rem;
+}
+/* feature section  */
+.feature_box {
+  column-gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.375rem;
+}
+.feature {
+  margin-bottom: 3rem;
+}
+.feature-img-container {
+  width: 50%;
+}
+.feature-img-container img {
+  width: 100%;
+  border-radius: 1.125rem;
+}
+.feature-sub-title {
+  /* font-size: 1.125rem; */
+  /* font-weight: 600; */
+}
+.feature-info {
+  border-left: 0.063rem solid white;
+  padding-left: 1rem;
+}
+
+/* team section  */
+.team-img-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1.125rem;
+}
+.team-card {
+  padding: 1.25rem;
+  /* display: grid; */
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 3.625rem;
+}
+
+.team-img img {
+  width: 100%;
+  border-radius: 1.125rem;
+}
+.tainer-info {
+  position: relative;
+  top: -10vh;
+  left: 1vw;
+}
+.trainer-name {
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+/* client reviews  */
+.reviews-card-container {
+  /* display: grid; */
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+  margin-top: 3.375rem;
+}
+.reviews-card {
+  background: rgb(44, 44, 44);
+  padding: 0.75rem;
+  border-radius: 1rem;
+}
+.user-card {
+  align-items: center;
+  column-gap: 1rem;
+}
+.user-card small {
+  /* cursor: pointer; */
+  margin-top: 0.5rem;
+}
+.user-name {
+  /* font-size: 1.125rem; */
+  /* font-weight: 600; */
+}
+.user-img-container img {
+  width: 40px;
+  border-radius: 50%;
+}
+/* footer  */
+.footer {
+  background-color: rgb(27, 27, 27);
+}
+.footer-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  /* display: flex; */
+  justify-content: space-between;
+  /* display: grid; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  /* justify-items: center; */
+  border-bottom: 0.125rem solid white;
+}
+.footer-card-1 {
+  width: 50%;
+}
+.footer-sub-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.438rem;
+}
+.footer-container div .text-info {
+  margin-bottom: 1.25rem;
+}
+.footer-container .brand {
+  margin-bottom: 1.25rem;
+}
+.copy-right {
+  padding: 2rem 0 2rem 0;
+}
+
+/* for small devices  */
+@media screen and (max-width: 576px) {
+  .nav-container,
+  .banner-container,
+  .habit-card-container,
+  .run-card-container,
+  .team-img-container,
+  .footer-container,
+  .bmi-card,
+  .bmi-Calculator-container,
+  .feature-box-container,
+  .client-review,
+  .team-info-container {
+    margin: 0 1rem;
+  }
+  .nav-items {
+    display: none;
+  }
+  .banner-container {
+    flex-direction: column;
+  }
+  .title-text-container,
+  .footer-card-1,
+  .feature-img-container {
+    width: 100%;
+  }
+  .title {
+    font-size: 2.25rem;
+  }
+  .rectangle-01 {
+    /* top: 650px;
+    left: 32px; */
+    top: 100%;
+    left: 8%;
+  }
+  .rectangle-02 {
+    /* top: 470px;
+    left: 215px; */
+    top: 70%;
+    left: 52%;
+  }
+  .circle {
+    padding: 1.875rem;
+  }
+  .rec-01-title {
+    font-size: 1.134rem;
+  }
+  .rec-02-title {
+    font-size: 1.875rem;
+  }
+  .habit-title,
+  .run-title,
+  .bmi-title,
+  .feature-title,
+  .team-title {
+    font-size: 2rem;
+  }
+  .habit-card-container,
+  .team-card,
+  .reviews-card-container {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2.25rem;
+  }
+  .run-card,
+  .footer-container,
+  .bmi-card,
+  .feature_box {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .bmi-input {
+    padding: 0.75rem;
+  }
+}
+
+/* for medium devices  */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .habit-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav-container,
+  .banner-container,
+  .habit-card-container,
+  .run-card-container,
+  .team-img-container,
+  .footer-container,
+  .bmi-card,
+  .bmi-Calculator-container,
+  .feature-box-container,
+  .client-review,
+  .team-info-container {
+    margin: 0 1rem;
+  }
+  .banner-container {
+    flex-direction: column;
+  }
+  .rectangle-01 {
+    /* top: 650px;
+    left: 32px; */
+    top: 100%;
+    left: 8%;
+  }
+  .rectangle-02 {
+    /* top: 470px;
+    left: 215px; */
+    top: 70%;
+    left: 52%;
+  }
+  .circle {
+    padding: 1.875rem;
+  }
+  .rec-01-title {
+    font-size: 1.134rem;
+  }
+  .rec-02-title {
+    font-size: 1.875rem;
+  }
+  .nav-items {
+    display: none;
+  }
+  .title {
+    font-size: 2.25rem;
+  }
+  .run-card,
+  .footer-container,
+  .bmi-card,
+  .feature_box {
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .habit-title,
+  .run-title,
+  .bmi-title,
+  .feature-title {
+    font-size: 2rem;
+  }
+  .bmi-chart {
+    display: flex;
+    flex-direction: column;
+  }
+  .team-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* 526 lines  */
