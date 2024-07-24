@@ -242,7 +242,7 @@
   grid-template-columns: repeat(2, 1fr);
 }
 .bmi-input {
-  padding: 0.75rem 2.5rem 0.75rem 1.25rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
   background: rgb(44, 44, 44);
   margin: 0.313rem;
@@ -478,7 +478,7 @@
     row-gap: 2rem;
   }
   .bmi-input {
-    padding: 0.75rem;
+    padding: 0.5rem;
   }
   .fa-angle-down-gender,
   .fa-angle-down-select {
