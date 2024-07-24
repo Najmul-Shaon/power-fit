@@ -79,6 +79,11 @@
   align-items: center;
   justify-content: space-between;
 }
+.nav-bar-icon {
+  display: none;
+  color: white;
+  font-size: 1.125rem;
+}
 .nav-items {
   column-gap: 2.938rem;
   justify-content: space-between;
@@ -408,6 +413,9 @@
   .team-info-container {
     margin: 0 1rem;
   }
+  .nav-bar-icon {
+    display: block;
+  }
   .nav-items {
     display: none;
   }
@@ -509,6 +517,9 @@
   }
   .rec-02-title {
     font-size: 1.875rem;
+  }
+  .nav-bar-icon{
+    display: block;
   }
   .nav-items {
     display: none;
