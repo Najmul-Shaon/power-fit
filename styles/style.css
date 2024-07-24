@@ -249,7 +249,6 @@
   border: none;
   color: white;
 }
-
 .bmi-select-input {
   grid-column: span 2;
 }
@@ -262,6 +261,9 @@
   padding: 2.5rem 2rem 2.5rem 3.375rem;
   column-gap: 10rem;
   justify-content: space-between;
+}
+.run-card-text {
+  width: 50%;
 }
 /* .run-card .text-info,
 .bmi-calculator .text-info {
@@ -280,7 +282,6 @@
   /* text-decoration: none; */
   border-radius: 2.325rem;
 }
-
 .run-img {
   width: 100%;
   border-radius: 1.125rem;
@@ -424,7 +425,8 @@
   }
   .title-text-container,
   .footer-card-1,
-  .feature-img-container {
+  .feature-img-container,
+  .run-card-text {
     width: 100%;
   }
   .title {
@@ -474,6 +476,11 @@
   .bmi-input {
     padding: 0.75rem;
   }
+  .fa-angle-down-gender,
+  .fa-angle-down-select {
+    top: -6vh;
+    left: 90vw;
+  }
 }
 
 /* for medium devices  */
@@ -518,7 +525,7 @@
   .rec-02-title {
     font-size: 1.875rem;
   }
-  .nav-bar-icon{
+  .nav-bar-icon {
     display: block;
   }
   .nav-items {
@@ -546,6 +553,9 @@
   }
   .team-card {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .run-card-text {
+    width: 100%;
   }
 }
 /* 526 lines  */
