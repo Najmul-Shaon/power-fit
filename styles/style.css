@@ -307,9 +307,11 @@
 }
 /* client reviews  */
 .reviews-card-container {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   column-gap: 1rem;
   margin-top: 3.375rem;
+  align-items: center;
+  justify-content: space-between;
 }
 .reviews-card {
   background: rgb(44, 44, 44);
@@ -328,9 +330,19 @@
   width: 40px;
   border-radius: 50%;
 }
-.review-icon {
+.review-icon-star {
   font-size: 1rem;
   color: rgba(255, 229, 85, 0.582);
+}
+.reviews-arrow i {
+  color: white;
+  font-size: 1.5rem;
+  background-color: rgb(44, 44, 44);
+  padding: 1rem;
+  border-radius: 50%;
+}
+.second-arrow-icon {
+  text-align: end;
 }
 /* footer  */
 .footer {
@@ -378,7 +390,8 @@
   .nav-bar-icon {
     display: block;
   }
-  .nav-items {
+  .nav-items,
+  .reviews-arrow {
     display: none;
   }
   .banner-container {
@@ -482,7 +495,8 @@
   .nav-bar-icon {
     display: block;
   }
-  .nav-items {
+  .nav-items,
+  .reviews-arrow {
     display: none;
   }
   .title {
