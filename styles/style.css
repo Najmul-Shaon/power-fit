@@ -92,14 +92,8 @@
   padding: 0.313rem;
 }
 .nav-item {
-  /* list-style: none; */
   padding: 0.5rem 1.25rem;
   border-radius: 2.875rem;
-  /* font-weight: 600; */
-  /* font-size: 1.125rem; */
-}
-.nav-item a {
-  /* text-decoration: none; */
 }
 .title-text-container {
   width: 600px;
@@ -111,10 +105,6 @@
 .title span {
   font-family: "Dancing Script", cursive;
 }
-/* .title-text-container .text-info,
-.banner-btn-container {
-  margin-top: 0.875rem;
-} */
 .banner-btn-container {
   column-gap: 0.875rem;
 }
@@ -143,15 +133,11 @@
   column-gap: 0.5rem;
   align-items: center;
   position: absolute;
-  /* top: 556px;
-  left: 1180px; */
   top: 62%;
   left: 62%;
 }
 .rectangle-02 {
   position: absolute;
-  /* top: 300px;
-  left: 1550px; */
   top: 33%;
   left: 80%;
 }
@@ -177,9 +163,6 @@
   font-size: 3rem;
   font-weight: 900;
 }
-/* .habit-info {
-  margin-top: 0.875rem;
-} */
 .habit-card-container {
   /* display: grid; */
   grid-template-columns: repeat(4, 1fr);
@@ -194,8 +177,6 @@
   width: 100%;
 }
 .habit-img-title {
-  /* font-size: 1.125rem; */
-  /* font-weight: 600; */
   margin-top: 1.875rem;
 }
 .habit-card {
@@ -216,10 +197,6 @@
   justify-content: space-between;
   column-gap: 2rem;
 }
-/* .bmi-calculator,
-.bmi-chart {
-  width: 50%;
-} */
 .table {
   border-collapse: collapse;
   margin-top: 3.125rem;
@@ -238,11 +215,10 @@
 }
 .inp-container {
   margin-top: 2rem;
-  /* display: grid; */
   grid-template-columns: repeat(2, 1fr);
 }
 .bmi-input {
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   background: rgb(44, 44, 44);
   margin: 0.313rem;
@@ -265,21 +241,13 @@
 .run-card-text {
   width: 50%;
 }
-/* .run-card .text-info,
-.bmi-calculator .text-info {
-  margin-top: 0.875rem;
-} */
 .run-btn,
 .bmi-btn {
   margin-top: 2.215rem;
-  /* list-style: none; */
-  /* font-size: 1.125rem; */
-  /* font-weight: 600; */
 }
 .run-btn a,
 .bmi-btn a {
   padding: 1rem 2.5rem;
-  /* text-decoration: none; */
   border-radius: 2.325rem;
 }
 .run-img {
@@ -306,10 +274,6 @@
   width: 100%;
   border-radius: 1.125rem;
 }
-.feature-sub-title {
-  /* font-size: 1.125rem; */
-  /* font-weight: 600; */
-}
 .feature-info {
   border-left: 0.063rem solid white;
   padding-left: 1rem;
@@ -322,7 +286,6 @@
 }
 .team-card {
   padding: 1.25rem;
-  /* display: grid; */
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 1.25rem;
@@ -344,7 +307,6 @@
 }
 /* client reviews  */
 .reviews-card-container {
-  /* display: grid; */
   grid-template-columns: repeat(3, 1fr);
   column-gap: 1rem;
   margin-top: 3.375rem;
@@ -358,17 +320,17 @@
   align-items: center;
   column-gap: 1rem;
 }
-.user-card small {
-  /* cursor: pointer; */
+.user-card small,
+.review-icon {
   margin-top: 0.5rem;
-}
-.user-name {
-  /* font-size: 1.125rem; */
-  /* font-weight: 600; */
 }
 .user-img-container img {
   width: 40px;
   border-radius: 50%;
+}
+.review-icon {
+  font-size: 1rem;
+  color: rgba(255, 229, 85, 0.582);
 }
 /* footer  */
 .footer {
@@ -377,11 +339,7 @@
 .footer-container {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  /* display: flex; */
   justify-content: space-between;
-  /* display: grid; */
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* justify-items: center; */
   border-bottom: 0.125rem solid white;
 }
 .footer-card-1 {
@@ -437,14 +395,10 @@
     font-size: 2.25rem;
   }
   .rectangle-01 {
-    /* top: 650px;
-    left: 32px; */
     top: 100%;
     left: 8%;
   }
   .rectangle-02 {
-    /* top: 470px;
-    left: 215px; */
     top: 70%;
     left: 52%;
   }
@@ -509,14 +463,10 @@
     flex-direction: column;
   }
   .rectangle-01 {
-    /* top: 650px;
-    left: 32px; */
     top: 100%;
     left: 8%;
   }
   .rectangle-02 {
-    /* top: 470px;
-    left: 215px; */
     top: 70%;
     left: 52%;
   }
@@ -563,4 +513,3 @@
     width: 100%;
   }
 }
-/* 526 lines  */
