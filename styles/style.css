@@ -288,10 +288,13 @@
 }
 /* feature section  */
 .feature_box {
-  column-gap: 1rem;
+  column-gap: 2rem;
   justify-content: space-between;
   align-items: center;
   margin-top: 3.375rem;
+}
+.features {
+  width: 50%;
 }
 .feature {
   margin-bottom: 3rem;
@@ -426,7 +429,8 @@
   .title-text-container,
   .footer-card-1,
   .feature-img-container,
-  .run-card-text {
+  .run-card-text,
+  .features {
     width: 100%;
   }
   .title {
@@ -554,7 +558,8 @@
   .team-card {
     grid-template-columns: repeat(2, 1fr);
   }
-  .run-card-text {
+  .run-card-text,
+  .features {
     width: 100%;
   }
 }
